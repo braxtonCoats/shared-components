@@ -16,9 +16,8 @@ Alerts control their own color based on `type`.
 
 A long alert:
 ```javascript
-const lipsum = require('lorem-ipsum');
 <Alert type="info">
-  {lipsum({ count: 8 })}
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id diam maecenas ultricies mi eget mauris. Elit sed vulputate mi sit amet mauris commodo quis. Ornare arcu odio ut sem nulla pharetra diam sit. Varius sit amet mattis vulputate enim nulla aliquet. Nulla facilisi cras fermentum odio eu feugiat pretium nibh. Amet consectetur adipiscing elit pellentesque habitant morbi. Lorem donec massa sapien faucibus. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Purus sit amet luctus venenatis.
 </Alert>
 ```
 
@@ -34,7 +33,6 @@ A text-only alert (no icon):
 Alerts will show a close button if you supply an `onClose` prop. They will close automatically if you also supply a `closeTimeout` prop.
 
 ```javascript
-const lipsum = require('lorem-ipsum');
 
 class DismissState extends React.PureComponent {
   constructor() {
@@ -58,7 +56,9 @@ class DismissState extends React.PureComponent {
 
 <Alert.Group>
   <DismissState>
-    <Alert onClose={() => { /* handle it! */ }} type="info">{lipsum({ count: 3 })}</Alert>
+    <Alert onClose={() => { /* handle it! */ }} type="info">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique magna sit amet purus.
+    </Alert>
   </DismissState>
   <DismissState>
     <Alert onClose={() => { /* handle it! */ }} type="info" closeTimeout={4000}>Closes automatically after 4 seconds</Alert>
@@ -71,12 +71,17 @@ class DismissState extends React.PureComponent {
 Alert ships with a `.Group` static component which can be used to group multiple alerts together:
 
 ```javascript
-const lipsum = require('lorem-ipsum');
 
 <Alert.Group>
-  <Alert type="info">{lipsum({ count: 2 })}</Alert>
-  <Alert type="error">{lipsum({ count: 1 })}</Alert>
-  <Alert type="success">{lipsum({ count: 3 })}</Alert>
+  <Alert type="info">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum.
+  </Alert>
+  <Alert type="error">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </Alert>
+  <Alert type="success">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet nulla malesuada pellentesque elit. Nulla pellentesque dignissim enim sit amet venenatis urna.
+  </Alert>
 </Alert.Group>
 ```
 

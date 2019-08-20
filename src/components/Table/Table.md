@@ -34,7 +34,7 @@
 _A long table_
 
 ```javascript
-const lipsum = require('lorem-ipsum');
+const lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.";
 
 <Table
   headers={
@@ -51,13 +51,13 @@ const lipsum = require('lorem-ipsum');
 >
   {new Array(4).fill(null).map((_, idx) => (
     <Table.Row key={idx}>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
-      <Table.Cell>{lipsum(3)}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
+      <Table.Cell>{lipsum}</Table.Cell>
     </Table.Row>
   ))}
 </Table>;

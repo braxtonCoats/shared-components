@@ -35,10 +35,12 @@ PercyScript.run(async (page, percySnapshot) => {
 
   // card
   await page.goto('http://localhost:6060#!/Card');
+  await page.waitFor(3000);
   await percySnapshot('Card page');
 
   // checkbox
   await page.goto('http://localhost:6060#!/Checkbox');
+  await page.waitFor(3000);
   await percySnapshot('checkbox page');
 
   // code
@@ -61,6 +63,7 @@ PercyScript.run(async (page, percySnapshot) => {
 
   // dragbox
   await page.goto('http://localhost:6060#!/DragBox');
+  await page.waitFor(3000);
   await percySnapshot('dragbox page');
 
   // draggroup
@@ -218,6 +221,5 @@ PercyScript.run(async (page, percySnapshot) => {
   // togglebutton
   await page.goto('http://localhost:6060#!/ToggleButton');
   await percySnapshot('togglebutton page');
-
 
 });

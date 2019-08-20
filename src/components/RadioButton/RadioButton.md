@@ -18,13 +18,13 @@ To join RadioButtons together, use them like you would any `<input type="radio">
 #### Description
 
 ```js
-const lipsum = require('lorem-ipsum');
+const lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui sapien eget mi. Pretium fusce id velit ut.";
 <RadioButton.Group>
   <RadioButton name="example2" value="one2" label="description #1">
-    {lipsum({ count: 3 })}
+    {lipsum}
   </RadioButton>
   <RadioButton disabled name="example2" value="two2" label="description #2">
-    {lipsum({ count: 3 })}
+    {lipsum}
   </RadioButton>
 </RadioButton.Group>;
 ```
