@@ -27,7 +27,7 @@ PercyScript.run(async (page, percySnapshot) => {
   await percySnapshot('button page');
 
   // callout
-  await page.goto('http://localhost:6060#!/Callout');
+  /* await page.goto('http://localhost:6060#!/Callout');
   await page.waitFor(3000);
   await page.hover('button[class="scl-button Button-sc-4iie3h-0 fznJUE"]');
   await page.waitFor(3000);
@@ -221,5 +221,6 @@ PercyScript.run(async (page, percySnapshot) => {
   // togglebutton
   await page.goto('http://localhost:6060#!/ToggleButton');
   await percySnapshot('togglebutton page');
+  */
 
 });
