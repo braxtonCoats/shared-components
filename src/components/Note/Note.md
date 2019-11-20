@@ -1,14 +1,11 @@
 ```javascript
-const lipsum = require('lorem-ipsum');
 <Note>
-  {lipsum({ count: 4 })}
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Molestie a iaculis at erat. Enim neque volutpat ac tincidunt vitae semper quis lectus."
 </Note>
 ```
 
 ```javascript
-const lipsum = require('lorem-ipsum');
-
 <Note.Alternate>
-  {lipsum({ count: 6 })}
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus risus at ultrices. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Molestie a iaculis at erat. Enim neque volutpat ac tincidunt vitae semper quis lectus."
 </Note.Alternate>
 ```

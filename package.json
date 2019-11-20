@@ -22,7 +22,8 @@
     "build-docs:nojekyll": "touch docsDist/.nojekyll",
     "build-docs": "run-p build-docs:*",
     "predeploy": "npm run build-docs",
-    "deploy": "gh-pages -d docsDist --dotfiles"
+    "deploy": "gh-pages -d docsDist --dotfiles",
+    "percy": "npx percy exec -- node snapshots.js"
   },
   "repository": {
     "type": "git",
@@ -88,6 +89,7 @@
     "@babel/preset-env": "7.1.0",
     "@babel/preset-react": "7.0.0",
     "@babel/runtime": "7.1.2",
+    "@percy/script": "^1.0.0",
     "@storybook/addon-actions": "3.4.11",
     "@storybook/addon-links": "3.4.11",
     "@storybook/react": "4.0.0-rc.2",

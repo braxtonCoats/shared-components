@@ -5,11 +5,12 @@ To keep things visually consistent and connected, utilize the `Tab.Container` co
 `Tab.List` itself provides a customized `onClick` handler to child `Tab` components and uses its own `onTabSelected` and `selectedTabIndex` props to give you a convenient and centralized place to keep track of tab state. If you'd prefer to do your own logic, you can just wrap `Tab` components with a `Tab.styles.List` component for rendering purposes.
 
 ```javascript
-const lipsum = require('lorem-ipsum');
+const lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in.";
+
 const content = [
-  lipsum({ count: 1 }),
-  lipsum({ count: 6 }),
-  lipsum({ count: 2, units: 'paragraph' }),
+  lipsum,
+  lipsum+lipsum,
+  lipsum+lipsum+lipsum,
 ];
 
 class Wrapper extends React.Component {

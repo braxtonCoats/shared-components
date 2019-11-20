@@ -27,7 +27,7 @@ const Button = styled.button`
   border-color: ${get('colors.primary.default')};
 
   color: ${get('colors.text.inverted')};
-  background: ${get('colors.primary.default')};
+  background: ${get('colors.primary.dark')};
 
   padding: 12px 28px 10px 28px;
   display: inline-block;
